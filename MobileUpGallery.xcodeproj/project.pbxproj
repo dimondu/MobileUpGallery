@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F4C0C9AC29F06695005B63BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9AB29F06695005B63BA /* AppDelegate.swift */; };
 		F4C0C9AE29F06695005B63BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9AD29F06695005B63BA /* SceneDelegate.swift */; };
-		F4C0C9B029F06695005B63BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9AF29F06695005B63BA /* ViewController.swift */; };
-		F4C0C9B329F06695005B63BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C0C9B129F06695005B63BA /* Main.storyboard */; };
 		F4C0C9B529F06697005B63BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C0C9B429F06697005B63BA /* Assets.xcassets */; };
 		F4C0C9B829F06697005B63BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C0C9B629F06697005B63BA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		F4C0C9A829F06695005B63BA /* MobileUpGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C0C9AB29F06695005B63BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4C0C9AD29F06695005B63BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4C0C9AF29F06695005B63BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4C0C9B229F06695005B63BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C0C9B429F06697005B63BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C0C9B729F06697005B63BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4C0C9B929F06697005B63BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,37 @@
 		F4C0C9AA29F06695005B63BA /* MobileUpGallery */ = {
 			isa = PBXGroup;
 			children = (
-				F4C0C9AB29F06695005B63BA /* AppDelegate.swift */,
-				F4C0C9AD29F06695005B63BA /* SceneDelegate.swift */,
-				F4C0C9AF29F06695005B63BA /* ViewController.swift */,
-				F4C0C9B129F06695005B63BA /* Main.storyboard */,
-				F4C0C9B429F06697005B63BA /* Assets.xcassets */,
-				F4C0C9B629F06697005B63BA /* LaunchScreen.storyboard */,
-				F4C0C9B929F06697005B63BA /* Info.plist */,
+				F4C0C9BF29F06709005B63BA /* App */,
+				F4C0C9C129F06747005B63BA /* Resources */,
+				F4C0C9C029F06738005B63BA /* Storyboards */,
 			);
 			path = MobileUpGallery;
+			sourceTree = "<group>";
+		};
+		F4C0C9BF29F06709005B63BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0C9AB29F06695005B63BA /* AppDelegate.swift */,
+				F4C0C9AD29F06695005B63BA /* SceneDelegate.swift */,
+				F4C0C9B929F06697005B63BA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4C0C9C029F06738005B63BA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0C9B629F06697005B63BA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F4C0C9C129F06747005B63BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0C9B429F06697005B63BA /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +145,6 @@
 			files = (
 				F4C0C9B829F06697005B63BA /* LaunchScreen.storyboard in Resources */,
 				F4C0C9B529F06697005B63BA /* Assets.xcassets in Resources */,
-				F4C0C9B329F06695005B63BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C0C9B029F06695005B63BA /* ViewController.swift in Sources */,
 				F4C0C9AC29F06695005B63BA /* AppDelegate.swift in Sources */,
 				F4C0C9AE29F06695005B63BA /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4C0C9B129F06695005B63BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4C0C9B229F06695005B63BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4C0C9B629F06697005B63BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MobileUpGallery/Info.plist;
+				INFOPLIST_FILE = MobileUpGallery/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MobileUpGallery/Info.plist;
+				INFOPLIST_FILE = MobileUpGallery/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
