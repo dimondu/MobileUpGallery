@@ -11,6 +11,11 @@
 		F4C0C9AE29F06695005B63BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9AD29F06695005B63BA /* SceneDelegate.swift */; };
 		F4C0C9B529F06697005B63BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C0C9B429F06697005B63BA /* Assets.xcassets */; };
 		F4C0C9B829F06697005B63BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C0C9B629F06697005B63BA /* LaunchScreen.storyboard */; };
+		F4C0C9C429F069E7005B63BA /* AuthorizatonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9C329F069E7005B63BA /* AuthorizatonViewController.swift */; };
+		F4C0C9C629F06AA1005B63BA /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9C529F06AA1005B63BA /* AuthorizationPresenter.swift */; };
+		F4C0C9C829F06AAD005B63BA /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9C729F06AAD005B63BA /* AuthorizationInteractor.swift */; };
+		F4C0C9CA29F06ABF005B63BA /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9C929F06ABF005B63BA /* AuthorizationRouter.swift */; };
+		F4C0C9CC29F06AD5005B63BA /* AuthorizationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		F4C0C9B429F06697005B63BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C0C9B729F06697005B63BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4C0C9B929F06697005B63BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C0C9C329F069E7005B63BA /* AuthorizatonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizatonViewController.swift; sourceTree = "<group>"; };
+		F4C0C9C529F06AA1005B63BA /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		F4C0C9C729F06AAD005B63BA /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
+		F4C0C9C929F06ABF005B63BA /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+		F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,7 @@
 		F4C0C9AA29F06695005B63BA /* MobileUpGallery */ = {
 			isa = PBXGroup;
 			children = (
+				F4C0C9C229F069D0005B63BA /* Authorization */,
 				F4C0C9BF29F06709005B63BA /* App */,
 				F4C0C9C129F06747005B63BA /* Resources */,
 				F4C0C9C029F06738005B63BA /* Storyboards */,
@@ -83,6 +94,18 @@
 				F4C0C9B429F06697005B63BA /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4C0C9C229F069D0005B63BA /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0C9C329F069E7005B63BA /* AuthorizatonViewController.swift */,
+				F4C0C9C529F06AA1005B63BA /* AuthorizationPresenter.swift */,
+				F4C0C9C729F06AAD005B63BA /* AuthorizationInteractor.swift */,
+				F4C0C9C929F06ABF005B63BA /* AuthorizationRouter.swift */,
+				F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C0C9C629F06AA1005B63BA /* AuthorizationPresenter.swift in Sources */,
+				F4C0C9C429F069E7005B63BA /* AuthorizatonViewController.swift in Sources */,
+				F4C0C9CA29F06ABF005B63BA /* AuthorizationRouter.swift in Sources */,
+				F4C0C9C829F06AAD005B63BA /* AuthorizationInteractor.swift in Sources */,
+				F4C0C9CC29F06AD5005B63BA /* AuthorizationConfigurator.swift in Sources */,
 				F4C0C9AC29F06695005B63BA /* AppDelegate.swift in Sources */,
 				F4C0C9AE29F06695005B63BA /* SceneDelegate.swift in Sources */,
 			);
@@ -299,7 +327,6 @@
 				INFOPLIST_FILE = MobileUpGallery/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +353,6 @@
 				INFOPLIST_FILE = MobileUpGallery/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
