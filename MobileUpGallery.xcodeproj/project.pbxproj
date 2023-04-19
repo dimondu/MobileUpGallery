@@ -16,6 +16,7 @@
 		F4C0C9C829F06AAD005B63BA /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9C729F06AAD005B63BA /* AuthorizationInteractor.swift */; };
 		F4C0C9CA29F06ABF005B63BA /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9C929F06ABF005B63BA /* AuthorizationRouter.swift */; };
 		F4C0C9CC29F06AD5005B63BA /* AuthorizationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */; };
+		F4C0C9CF29F06FA8005B63BA /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9CE29F06FA8005B63BA /* AuthorizationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F4C0C9C729F06AAD005B63BA /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
 		F4C0C9C929F06ABF005B63BA /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
 		F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationConfigurator.swift; sourceTree = "<group>"; };
+		F4C0C9CE29F06FA8005B63BA /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		F4C0C9C229F069D0005B63BA /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				F4C0C9CD29F06F95005B63BA /* View */,
 				F4C0C9C329F069E7005B63BA /* AuthorizatonViewController.swift */,
 				F4C0C9C529F06AA1005B63BA /* AuthorizationPresenter.swift */,
 				F4C0C9C729F06AAD005B63BA /* AuthorizationInteractor.swift */,
@@ -106,6 +109,14 @@
 				F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		F4C0C9CD29F06F95005B63BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0C9CE29F06FA8005B63BA /* AuthorizationView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				F4C0C9C829F06AAD005B63BA /* AuthorizationInteractor.swift in Sources */,
 				F4C0C9CC29F06AD5005B63BA /* AuthorizationConfigurator.swift in Sources */,
 				F4C0C9AC29F06695005B63BA /* AppDelegate.swift in Sources */,
+				F4C0C9CF29F06FA8005B63BA /* AuthorizationView.swift in Sources */,
 				F4C0C9AE29F06695005B63BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
