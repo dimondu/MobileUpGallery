@@ -14,9 +14,16 @@ final class AuthorizationView: UIView {
     enum Constants {
         static let mainTitleText = "Mobile Up Gallery"
         static let mainTitleFontSize: CGFloat = 44
+        static let mainTitleTopAnchor: CGFloat = 170
+        static let mainTitleLeadingAnchor: CGFloat = 24
+        static let mainTitleWidthAnchor: CGFloat = 227
+        static let mainTitleHeightAnchor: CGFloat = 106
         static let buttonTitle = "Вход через VK"
         static let buttonFontSize: CGFloat = 15
         static let buttonCornerRadius: CGFloat = 10
+        static let enterButtonSideSize: CGFloat = 16
+        static let enterButtonBottomAnchor: CGFloat = 42
+        static let enterButtonHeightAnchor: CGFloat = 52
     }
     
     // MARK: - Public Properties
@@ -78,15 +85,15 @@ final class AuthorizationView: UIView {
 extension AuthorizationView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            mainTitle.topAnchor.constraint(equalTo: topAnchor, constant: 170),
-            mainTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
-            mainTitle.widthAnchor.constraint(equalToConstant: 227),
-            mainTitle.heightAnchor.constraint(equalToConstant: 106),
+            mainTitle.topAnchor.constraint(equalTo: topAnchor, constant: Constants.mainTitleTopAnchor),
+            mainTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.mainTitleLeadingAnchor),
+            mainTitle.widthAnchor.constraint(equalToConstant: Constants.mainTitleWidthAnchor),
+            mainTitle.heightAnchor.constraint(equalToConstant: Constants.mainTitleHeightAnchor),
             
-            enterButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            enterButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            enterButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -42),
-            enterButton.heightAnchor.constraint(equalToConstant: 52)
+            enterButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.enterButtonSideSize),
+            enterButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.enterButtonSideSize),
+            enterButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Constants.enterButtonBottomAnchor),
+            enterButton.heightAnchor.constraint(equalToConstant: Constants.enterButtonHeightAnchor)
         ])
     }
 }

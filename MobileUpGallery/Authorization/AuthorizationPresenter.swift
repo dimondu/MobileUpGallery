@@ -18,10 +18,14 @@ final class AuthorizationPresenter: AuthorizationViewOutputProtocol {
     
     private weak var view: AuthorizationViewInputProtocol?
     
+    // MARK: - Initializers
+    
     init(view: AuthorizationViewInputProtocol) {
         self.view = view
     }
 }
+
+// MARK: - AuthorizationInteractorOutputProtocol
 
 extension AuthorizationPresenter: AuthorizationInteractorOutputProtocol {
     

@@ -20,7 +20,7 @@ final class AuthorizationInteractor: AuthorizationInteractorInputProtocol {
     // MARK: - Private Properties
     
     private weak var presenter: AuthorizationInteractorOutputProtocol?
-
+    
     // MARK: - Initializers
     
     init(presenter: AuthorizationInteractorOutputProtocol) {

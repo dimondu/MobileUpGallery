@@ -41,7 +41,6 @@ final class AuthorizationViewController: UIViewController {
         super.loadView()
         view = contentView
     }
-    
 }
 
 // MARK: - AuthorizationViewInputProtocol
