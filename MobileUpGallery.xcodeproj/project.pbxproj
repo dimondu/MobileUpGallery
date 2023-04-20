@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F45BF0A629F1B13200A5D31F /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45BF0A529F1B13200A5D31F /* GalleryView.swift */; };
 		F4C0C9AC29F06695005B63BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9AB29F06695005B63BA /* AppDelegate.swift */; };
 		F4C0C9AE29F06695005B63BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9AD29F06695005B63BA /* SceneDelegate.swift */; };
 		F4C0C9B529F06697005B63BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C0C9B429F06697005B63BA /* Assets.xcassets */; };
@@ -17,9 +18,15 @@
 		F4C0C9CA29F06ABF005B63BA /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9C929F06ABF005B63BA /* AuthorizationRouter.swift */; };
 		F4C0C9CC29F06AD5005B63BA /* AuthorizationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */; };
 		F4C0C9CF29F06FA8005B63BA /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9CE29F06FA8005B63BA /* AuthorizationView.swift */; };
+		F4C0C9D229F0F1DC005B63BA /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9D129F0F1DC005B63BA /* GalleryViewController.swift */; };
+		F4C0C9D429F0F1E3005B63BA /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9D329F0F1E3005B63BA /* GalleryPresenter.swift */; };
+		F4C0C9D629F0F1F0005B63BA /* GalleryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9D529F0F1F0005B63BA /* GalleryInteractor.swift */; };
+		F4C0C9D829F0F1F9005B63BA /* GalleryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9D729F0F1F9005B63BA /* GalleryRouter.swift */; };
+		F4C0C9DA29F0F203005B63BA /* GalleryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C9D929F0F203005B63BA /* GalleryCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F45BF0A529F1B13200A5D31F /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		F4C0C9A829F06695005B63BA /* MobileUpGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C0C9AB29F06695005B63BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4C0C9AD29F06695005B63BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +39,11 @@
 		F4C0C9C929F06ABF005B63BA /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
 		F4C0C9CB29F06AD5005B63BA /* AuthorizationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationConfigurator.swift; sourceTree = "<group>"; };
 		F4C0C9CE29F06FA8005B63BA /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		F4C0C9D129F0F1DC005B63BA /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		F4C0C9D329F0F1E3005B63BA /* GalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
+		F4C0C9D529F0F1F0005B63BA /* GalleryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractor.swift; sourceTree = "<group>"; };
+		F4C0C9D729F0F1F9005B63BA /* GalleryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRouter.swift; sourceTree = "<group>"; };
+		F4C0C9D929F0F203005B63BA /* GalleryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F45BF0A429F1B12500A5D31F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F45BF0A529F1B13200A5D31F /* GalleryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F4C0C99F29F06694005B63BA = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C0C9C229F069D0005B63BA /* Authorization */,
+				F4C0C9D029F0F1B1005B63BA /* Gallery */,
 				F4C0C9BF29F06709005B63BA /* App */,
 				F4C0C9C129F06747005B63BA /* Resources */,
 				F4C0C9C029F06738005B63BA /* Storyboards */,
@@ -117,6 +138,19 @@
 				F4C0C9CE29F06FA8005B63BA /* AuthorizationView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F4C0C9D029F0F1B1005B63BA /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				F45BF0A429F1B12500A5D31F /* View */,
+				F4C0C9D129F0F1DC005B63BA /* GalleryViewController.swift */,
+				F4C0C9D329F0F1E3005B63BA /* GalleryPresenter.swift */,
+				F4C0C9D529F0F1F0005B63BA /* GalleryInteractor.swift */,
+				F4C0C9D729F0F1F9005B63BA /* GalleryRouter.swift */,
+				F4C0C9D929F0F203005B63BA /* GalleryCoordinator.swift */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,11 +224,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C0C9C629F06AA1005B63BA /* AuthorizationPresenter.swift in Sources */,
+				F4C0C9D429F0F1E3005B63BA /* GalleryPresenter.swift in Sources */,
 				F4C0C9C429F069E7005B63BA /* AuthorizatonViewController.swift in Sources */,
+				F4C0C9D829F0F1F9005B63BA /* GalleryRouter.swift in Sources */,
+				F4C0C9D629F0F1F0005B63BA /* GalleryInteractor.swift in Sources */,
 				F4C0C9CA29F06ABF005B63BA /* AuthorizationRouter.swift in Sources */,
 				F4C0C9C829F06AAD005B63BA /* AuthorizationInteractor.swift in Sources */,
+				F45BF0A629F1B13200A5D31F /* GalleryView.swift in Sources */,
+				F4C0C9DA29F0F203005B63BA /* GalleryCoordinator.swift in Sources */,
 				F4C0C9CC29F06AD5005B63BA /* AuthorizationConfigurator.swift in Sources */,
 				F4C0C9AC29F06695005B63BA /* AppDelegate.swift in Sources */,
+				F4C0C9D229F0F1DC005B63BA /* GalleryViewController.swift in Sources */,
 				F4C0C9CF29F06FA8005B63BA /* AuthorizationView.swift in Sources */,
 				F4C0C9AE29F06695005B63BA /* SceneDelegate.swift in Sources */,
 			);
